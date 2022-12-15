@@ -7,6 +7,11 @@ span {
     font-style: italic;
 }
 
+/* style for main text */
+.main-text {
+    padding-left: 10px;
+}
+
 /* style for list */
 .conteiner-list {
     display: inline-block;
@@ -22,14 +27,16 @@ span {
 
 /* style for image */
 .conteiner-img {
-    float: right;
+    /* float: right; */
     border-style: solid;
-    border-width: 0.5;
+    border-width: 0.5px;
     padding: 5x;
     margin: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
+    background-color: beige;
 }
+
 
 .conteiner-img>div {
     display: flex;
@@ -45,11 +52,37 @@ span {
     padding: 5px;
 }
 
+/* style bottom list from the left */
+.bottom-link-left {
+    /* float: right; */
+    border-style: solid;
+    border-width: 0.5px;
+    padding: 5x;
+    margin: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: beige;
+    /* display: inline-block; */
+}
+
+.bottom-link-left>p {
+    background-color: rgb(207, 233, 233);
+    padding: 0;
+    margin: 0;
+    padding-left: 5px;
+}
+
+.main-conteiner-img {
+    display: table;
+    float: right;
+}
+
 /* style for navbar */
 
 .conteiner-navbar {
     display: flex;
     justify-content: space-between;
+    background-color: rgb(232, 232, 243);
 }
 
 .conteiner-navbar>nav>ul {
@@ -64,5 +97,51 @@ span {
     display: block;
     padding: 10px;
     border-style: solid;
-    border-width: 00.5px;
+    border-width: 0.5px;
 }
+
+@media (max-width: 900px) {
+    .conteiner-navbar {
+        flex-direction: column;
+    }
+}
+
+/* style for main div */
+.main {
+    display: flex;
+    justify-content: center;
+}
+
+/* style for side navbar */
+.side-navbar {
+    width: 14%;
+    background-color: rgb(228, 228, 245);
+}
+
+.side-navbar>ol {
+    list-style: none;
+    padding: 0px;
+    margin: 10px;
+    padding-bottom: 20px;
+}
+
+.side-navbar>ol>p {
+    padding: 0px;
+    margin: 0px;
+    border-bottom-style: solid;
+    border-width: 0.2px;
+}
+
+.img-logo-Wiki {
+    width: 100%;
+}
+
+.img-logo-Wiki>img {
+    width: 100%;
+}
+
+/* style for section div */
+.section {
+    width: 82%;
+}
+
